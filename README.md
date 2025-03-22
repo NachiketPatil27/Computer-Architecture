@@ -1,4 +1,4 @@
-# RISC-V Assembler
+# RISC-V Assembler (PHASE-I)
 
 The project contains a program that assembles a **RISC-V code to machine code**. It is a part of the CS204 - Computer Architecture course being taught under Prof. T.V. Kalyan at IIT Ropar. The language used in the program is **C++ version 20**
 
