@@ -141,7 +141,7 @@ program executes each instruction using five stages as described in the RISC-V a
     make --version
  </code></pre>
   <li>Download the zip file of the repository</li>
-  <li>cd into the Computer-Architecrure then to CA project Phase 2 and to src</li>
+  <li>cd into the Computer-Architecture then to CA Project Phase 2 and to src</li>
   <li>Run the inp.py file to make the test_case</li>
   <li>To run the GUI version of the project execute the gui.py file</li>
 <ul> 
