@@ -1,0 +1,45 @@
+Design and implement the functional simulator of 32bit RISCV ISA instructions.
+Here, we would take the input from the .mc file (output of Phase 1) and pick one instruction
+at a time, using the value in PC ( starting with 0x0). You will write a C/C++/Java
+program. You would need to include structures for all the registers here - PC, IR, Register
+File, temporary registers (like RM, RY, etc), etc., five steps of instruction execution as
+functions.
+
+All the instructions in the given in the input .mc file is executed as per the functional
+behavior of the instructions. Each instruction must go through the following steps:
+
+Step 1: Fetch
+Step 2: Decode
+Step 3: Execute
+Step 4: Memory Access
+Step 5: Register Update/Writeback
+
+Along with execution of instruction in steps, simulator should also provide messages
+what it is doing in each stage as an update in all the structures that would change. As part
+of the simulator, you should implement an additional instruction which exits the simulator,
+writes the data memory in .mc file before exiting. Further, introduce a variable “clock”
+that increments once for every instruction. Print the number of clock cycles at the end of
+each cycle.
+
+User-friendly GUI part is optional. Definitely such an effort will be given bonus (1%)
+in the overall project evaluation.
+
+You must test the software using the machine code of the below programs:
+- Fibonacci Program
+- Factorial Program
+- Bubble Sort Program
+
+To give an overall idea, I am sharing a .rar file with you. It contains several files for
+a C like implementation. Reading the .mc file might be slightly different but the essence
+remains same. The template implementation attached contains a README file, a design
+document, Makefile, and C code to start with. As part of your submission you are expected
+to submit the source code along with updated design document, README, input test files.
+
+Overall project evaluation will be on:
+- Functional completeness
+- Documentation completeness
+- Testcase
+
+Though eventually output of Phase 1 will drive Phase 2, to work in parallel, you can take a
+sample RISC-V machine code (may be from Venus) as .mc file and get started with Phase
+2 work.
